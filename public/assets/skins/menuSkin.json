@@ -1,0 +1,44 @@
+{
+    com.badlogic.gdx.graphics.g2d.BitmapFont: {
+        textSmall: { file: fonts/chalkboard18.fnt },
+        textMedium: { file: fonts/chalkboard32.fnt },
+  textLarge: { file: fonts/chalkboard50.fnt },
+  textOutlined: { file: fonts/outlined.fnt },
+    },
+    com.badlogic.gdx.graphics.Color: {
+    	banana: { hex: "FFFF66" },
+    	white: { hex: "FFFFFF" },
+    	black: { hex: "000000"},
+    	red: { hex: "FF0000"},
+    	blue: { hex: "0000FF" }
+    	},
+    com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: { 
+        default: {up: blueButtonUp , down: blueButtonDown, font: textSmall, fontColor: banana, pressedOffsetY: -4, disabled: pinkButtonUp }
+        pinkbutton: { up: pinkButtonUp , down: pinkButtonDown, font: textSmall, fontColor: banana, pressedOffsetY: -4 },
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle: {
+	    default-horizontal: { background: black8x8, knob: pbarIcon, knobBefore: blue8x8, knobAfter: banana8x8  },
+	    default-vertical: { background: black8x8, knob: pbarIcon, knobBefore: blue8x8, knobAfter: banana8x8 }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	dialogDim: { name: blue8x8, font: textSmall, color: { r: 0, g: 0, b: 0, a: 0.45 } }
+	},   
+	com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: { checkboxOn: checkOn, checkboxOff: checkOff, font: textMedium, fontColor: banana }
+	},
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+    	default: {font: textMedium, fontColor: banana },
+    	small: {font: textSmall, fontColor: banana }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: { background: black8x8, knob: pbarIcon, knobBefore: blue8x8, knobAfter: banana8x8 },
+	default-vertical: { background: black8x8, knob: pbarIcon, knobBefore: blue8x8, knobAfter: banana8x8 }
+	},
+    com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: { titleFont: textSmall, background: red8x8, titleFontColor: banana, stageBackground: dialogDim  },
+	dialog: {  titleFont: textSmall, background: red8x8, titleFontColor: banana, stageBackground: dialogDim }
+	},
+  	com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+  	default: { vScroll:black8x8, hScrollKnob: banana8x8, background: red8x8, hScroll: black8x8, vScrollKnob: banana8x8 }
+	}
+}

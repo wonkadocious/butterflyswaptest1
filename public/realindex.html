@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+       <head>
+              <title>Butterfly Swap Explosion!</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+              <script src="soundmanager2-setup.js"></script>
+  	      <script src="soundmanager2-jsmin.js"></script>
+  	      <script src="myinitscript.js"></script>
+  	      <script src="myfbfunctions.js"></script>
+       </head>
+
+        <body style="color: rgb(0, 0, 0); background-color: pink;">             
+              <div align="center" id="embed-html"></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+       </body>
+
+       <script>
+              function handleMouseDown(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = 'default';
+              }
+
+              function handleMouseUp(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = '';
+              }
+              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+       </script>
+
+<center>
+   <br>
+ <div id='status' style="font-family:chalkboard;font-size:200%;color:blue">
+  </div>
+  <br>
+  <img id='upic'>
+  </img>
+  <br>
+<div class="fb-like" data-href="https://apps.facebook.com/butterflyexplosion" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+</center>
+<div id="result"></div>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "butterflyswaptest"
+    },
+    "butterflyswaptest": {
+      "applicationId": "J0e4fgwPAWyVCzkzh8sXjohiipMrDFB2vNJA61jP"
+    }
+  }
+}
